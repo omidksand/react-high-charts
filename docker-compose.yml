@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+      target: app
+      dockerfile: docker/Dockerfile
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    # env_file: .env
+    tty: true
+    ports:
+      - 8085:80
+    restart: always
