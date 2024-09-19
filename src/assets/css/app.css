@@ -1,0 +1,69 @@
+.w100 {
+	width: 100%;
+}
+.h100 {
+	height: 100%;
+}
+.flex {
+	display: flex;
+}
+.flexRow {
+	flex-direction: row;
+}
+.flexCol {
+	flex-direction: column;
+}
+.flexGrow1 {
+	flex-grow: 1;
+}
+
+.app-headerView {
+	display: flex;
+	min-height: 50px;
+	color: #FFF;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+    background-color: #8B7ACF;
+    /* z-index: 1; */
+    border-bottom: 1px solid #EEE;
+    box-shadow: 0 2px 14px 8px rgba(150, 190, 238, 0.15);
+}
+.app-mainViewWrapper {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	overflow: auto;
+}
+.app-sidebarView {
+	display: flex;
+	flex-shrink: 0;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	width: 320px;
+}
+.app-mainContentView {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	align-items: start;
+	overflow-y: scroll;
+	width: 100%;
+}
+
+.csSidebarView {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+.csSidebarMenuItem {
+	display: flex;
+	width: 64px;
+	height: 64px;
+	box-shadow: 0 2px 14px 8px rgba(150, 190, 238, 0.15);
+	border-radius: 5px;
+	font-size: 80%;
+	justify-content: center;
+	align-items: center;
+}
