@@ -48,3 +48,9 @@ export default tseslint.config({
   },
 })
 ```
+
+
+### How To Run
+```bash
+docker compose down -v && docker compose up -d --build
+```
